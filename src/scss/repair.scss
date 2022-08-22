@@ -1,0 +1,125 @@
+$color_1: #1b1c21;
+$background-color_1: #ffffff;
+$background-color_2: inherit;
+
+.repair {
+	width: 224px;
+	height: 160px;
+	background-color: $background-color_1;
+	border-radius: 6px;
+	border: 1px solid #eaeaea;
+	transition: all 0.2s ease;
+	&:hover {
+		border: 2px #ff3e79 solid;
+		transform: scale(0.95);
+	}
+}
+.repair__link {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: flex-start;
+	text-decoration: none;
+	margin: auto;
+	padding: 0 16px;
+	border-radius: 6px;
+	height: 100%;
+	color: $color_1;
+	font-weight: 500;
+}
+.repairs {
+	display: flex;
+	height: 200px;
+	&::after {
+		content: "";
+		display: block;
+		width: 24px;
+		height: 165px;
+		position: absolute;
+		right: 0;
+		top: 10px;
+		z-index: 10;
+		background: linear-gradient( 270deg, #f8f8f8 16.84%, rgba(248, 248, 248, 0.0001) 100% );
+	}
+}
+
+.repairs-open {
+  height: 370px;
+}
+
+.repair__img {
+	align-self: end;
+	padding-bottom: 16px;
+}
+.repairs--visible {
+	height: fit-content;
+}
+
+.repairs__items {
+	display: flex;
+	list-style: none;
+	padding-left: 0;
+	list-style: none;
+}
+.catalog__repairs {
+	margin-left: px;
+}
+.readmore-two {
+  display: none;
+	align-items: center;
+	outline: none;
+	padding: 0;
+	border: 0;
+	background-color: inherit;
+	&:hover {
+		opacity: 70%;
+		cursor: pointer;
+	}
+
+}
+.button__texttwo {
+	font-weight: 500;
+}
+.button__imgtwo {
+	margin: 0 16px 0 16px;
+}
+
+.button__imgtwo--activated {
+	transform: rotate(180deg);
+}
+@media screen and (max-width: 767px) {
+	.repairs {
+		height: 220px;
+	}
+}
+@media screen and (min-width: 767px) {
+	.repairs {
+		padding: 0 24px;
+		margin-left: -16px;
+		flex-direction: column;
+		&::after {
+			display: none;
+		}
+	}
+	.repairs__items {
+		display: flex;
+		flex-wrap: wrap;
+		overflow: hidden;
+		gap: 16px 10px;
+		margin-left: 5px;
+	}
+	.readmore-two {
+		display: flex;
+	}
+	.repair {
+		width: 29%;
+		margin-left: 0px;
+		background-color: $background-color_1;
+	}
+}
+@media screen and (min-width: 1120px) {
+	.repair {
+		width: 22%;
+	}
+}

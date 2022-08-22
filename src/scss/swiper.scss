@@ -1,0 +1,24 @@
+// .swiper-pagination-bullet {
+//   background-color: #b5b6bc;
+//   width: 12px;
+//   height: 12px;
+//   top: 184px;
+//   margin-top: 1000px;
+// }
+
+.slider__pagination__service {
+  top: 235px;
+  z-index: 50;
+}
+
+.slider__pagination__repair {
+  top: 192px;
+  z-index: 50;
+}
+
+@media screen and (min-width: 767px) {
+  .swiper-pagination {
+    display: none;
+  }
+}
+
